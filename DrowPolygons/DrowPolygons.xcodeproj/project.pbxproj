@@ -15,6 +15,9 @@
 		799915F825F2998100DEB8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */; };
 		7999160325F2998100DEB8F1 /* DrowPolygonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */; };
 		7999160E25F2998100DEB8F1 /* DrowPolygonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */; };
+		7999161F25F29A9900DEB8F1 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999161E25F29A9900DEB8F1 /* Polygon.swift */; };
+		7999162425F29ACB00DEB8F1 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999162325F29ACB00DEB8F1 /* CGPoint.swift */; };
+		7999162925F29B2200DEB8F1 /* LineValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999162825F29B2200DEB8F1 /* LineValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowPolygonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowPolygonsUITests.swift; sourceTree = "<group>"; };
 		7999160F25F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7999161E25F29A9900DEB8F1 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		7999162325F29ACB00DEB8F1 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		7999162825F29B2200DEB8F1 /* LineValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				799915F425F2998100DEB8F1 /* Assets.xcassets */,
 				799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */,
 				799915F925F2998100DEB8F1 /* Info.plist */,
+				7999161E25F29A9900DEB8F1 /* Polygon.swift */,
+				7999162325F29ACB00DEB8F1 /* CGPoint.swift */,
+				7999162825F29B2200DEB8F1 /* LineValidator.swift */,
 			);
 			path = DrowPolygons;
 			sourceTree = "<group>";
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7999162925F29B2200DEB8F1 /* LineValidator.swift in Sources */,
+				7999161F25F29A9900DEB8F1 /* Polygon.swift in Sources */,
 				799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */,
 				799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */,
+				7999162425F29ACB00DEB8F1 /* CGPoint.swift in Sources */,
 				799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

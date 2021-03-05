@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799915EB25F2997C00DEB8F1 /* AppDelegate.swift */; };
+		799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */; };
+		799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799915EF25F2997C00DEB8F1 /* ViewController.swift */; };
+		799915F325F2997C00DEB8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799915F125F2997C00DEB8F1 /* Main.storyboard */; };
+		799915F525F2998100DEB8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799915F425F2998100DEB8F1 /* Assets.xcassets */; };
+		799915F825F2998100DEB8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */; };
+		7999160325F2998100DEB8F1 /* DrowPolygonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */; };
+		7999160E25F2998100DEB8F1 /* DrowPolygonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		799915FF25F2998100DEB8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799915E025F2997C00DEB8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799915E725F2997C00DEB8F1;
+			remoteInfo = DrowPolygons;
+		};
+		7999160A25F2998100DEB8F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799915E025F2997C00DEB8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799915E725F2997C00DEB8F1;
+			remoteInfo = DrowPolygons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		799915E825F2997C00DEB8F1 /* DrowPolygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrowPolygons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799915EB25F2997C00DEB8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		799915EF25F2997C00DEB8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		799915F225F2997C00DEB8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		799915F425F2998100DEB8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799915F725F2998100DEB8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		799915F925F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowPolygonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowPolygonsTests.swift; sourceTree = "<group>"; };
+		7999160425F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowPolygonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowPolygonsUITests.swift; sourceTree = "<group>"; };
+		7999160F25F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		799915E525F2997C00DEB8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799915FB25F2998100DEB8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7999160625F2998100DEB8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		799915DF25F2997C00DEB8F1 = {
+			isa = PBXGroup;
+			children = (
+				799915EA25F2997C00DEB8F1 /* DrowPolygons */,
+				7999160125F2998100DEB8F1 /* DrowPolygonsTests */,
+				7999160C25F2998100DEB8F1 /* DrowPolygonsUITests */,
+				799915E925F2997C00DEB8F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		799915E925F2997C00DEB8F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799915E825F2997C00DEB8F1 /* DrowPolygons.app */,
+				799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */,
+				7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		799915EA25F2997C00DEB8F1 /* DrowPolygons */ = {
+			isa = PBXGroup;
+			children = (
+				799915EB25F2997C00DEB8F1 /* AppDelegate.swift */,
+				799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */,
+				799915EF25F2997C00DEB8F1 /* ViewController.swift */,
+				799915F125F2997C00DEB8F1 /* Main.storyboard */,
+				799915F425F2998100DEB8F1 /* Assets.xcassets */,
+				799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */,
+				799915F925F2998100DEB8F1 /* Info.plist */,
+			);
+			path = DrowPolygons;
+			sourceTree = "<group>";
+		};
+		7999160125F2998100DEB8F1 /* DrowPolygonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */,
+				7999160425F2998100DEB8F1 /* Info.plist */,
+			);
+			path = DrowPolygonsTests;
+			sourceTree = "<group>";
+		};
+		7999160C25F2998100DEB8F1 /* DrowPolygonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */,
+				7999160F25F2998100DEB8F1 /* Info.plist */,
+			);
+			path = DrowPolygonsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799915E725F2997C00DEB8F1 /* DrowPolygons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygons" */;
+			buildPhases = (
+				799915E425F2997C00DEB8F1 /* Sources */,
+				799915E525F2997C00DEB8F1 /* Frameworks */,
+				799915E625F2997C00DEB8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrowPolygons;
+			productName = DrowPolygons;
+			productReference = 799915E825F2997C00DEB8F1 /* DrowPolygons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		799915FD25F2998100DEB8F1 /* DrowPolygonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsTests" */;
+			buildPhases = (
+				799915FA25F2998100DEB8F1 /* Sources */,
+				799915FB25F2998100DEB8F1 /* Frameworks */,
+				799915FC25F2998100DEB8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7999160025F2998100DEB8F1 /* PBXTargetDependency */,
+			);
+			name = DrowPolygonsTests;
+			productName = DrowPolygonsTests;
+			productReference = 799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7999160825F2998100DEB8F1 /* DrowPolygonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsUITests" */;
+			buildPhases = (
+				7999160525F2998100DEB8F1 /* Sources */,
+				7999160625F2998100DEB8F1 /* Frameworks */,
+				7999160725F2998100DEB8F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7999160B25F2998100DEB8F1 /* PBXTargetDependency */,
+			);
+			name = DrowPolygonsUITests;
+			productName = DrowPolygonsUITests;
+			productReference = 7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		799915E025F2997C00DEB8F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					799915E725F2997C00DEB8F1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					799915FD25F2998100DEB8F1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 799915E725F2997C00DEB8F1;
+					};
+					7999160825F2998100DEB8F1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 799915E725F2997C00DEB8F1;
+					};
+				};
+			};
+			buildConfigurationList = 799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrowPolygons" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 799915DF25F2997C00DEB8F1;
+			productRefGroup = 799915E925F2997C00DEB8F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799915E725F2997C00DEB8F1 /* DrowPolygons */,
+				799915FD25F2998100DEB8F1 /* DrowPolygonsTests */,
+				7999160825F2998100DEB8F1 /* DrowPolygonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		799915E625F2997C00DEB8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799915F825F2998100DEB8F1 /* LaunchScreen.storyboard in Resources */,
+				799915F525F2998100DEB8F1 /* Assets.xcassets in Resources */,
+				799915F325F2997C00DEB8F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799915FC25F2998100DEB8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7999160725F2998100DEB8F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		799915E425F2997C00DEB8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */,
+				799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */,
+				799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799915FA25F2998100DEB8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7999160325F2998100DEB8F1 /* DrowPolygonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7999160525F2998100DEB8F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7999160E25F2998100DEB8F1 /* DrowPolygonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7999160025F2998100DEB8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799915E725F2997C00DEB8F1 /* DrowPolygons */;
+			targetProxy = 799915FF25F2998100DEB8F1 /* PBXContainerItemProxy */;
+		};
+		7999160B25F2998100DEB8F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799915E725F2997C00DEB8F1 /* DrowPolygons */;
+			targetProxy = 7999160A25F2998100DEB8F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		799915F125F2997C00DEB8F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799915F225F2997C00DEB8F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799915F725F2998100DEB8F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7999161025F2998100DEB8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7999161125F2998100DEB8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7999161325F2998100DEB8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7999161425F2998100DEB8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7999161625F2998100DEB8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygonsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrowPolygons.app/DrowPolygons";
+			};
+			name = Debug;
+		};
+		7999161725F2998100DEB8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygonsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrowPolygons.app/DrowPolygons";
+			};
+			name = Release;
+		};
+		7999161925F2998100DEB8F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrowPolygons;
+			};
+			name = Debug;
+		};
+		7999161A25F2998100DEB8F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BY575KUK4V;
+				INFOPLIST_FILE = DrowPolygonsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygonsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrowPolygons;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrowPolygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7999161025F2998100DEB8F1 /* Debug */,
+				7999161125F2998100DEB8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7999161325F2998100DEB8F1 /* Debug */,
+				7999161425F2998100DEB8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7999161625F2998100DEB8F1 /* Debug */,
+				7999161725F2998100DEB8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7999161925F2998100DEB8F1 /* Debug */,
+				7999161A25F2998100DEB8F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 799915E025F2997C00DEB8F1 /* Project object */;
+}

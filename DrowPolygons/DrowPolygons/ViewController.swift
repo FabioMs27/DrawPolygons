@@ -41,6 +41,14 @@ class ViewController: UIViewController {
         polygon.redraw()
     }
     
+    @IBAction func draw(_ sender: UIButton) { }
+    @IBAction func erase(_ sender: UIButton) { }
+    @IBAction func movePolygon(_ sender: UIButton) { }
+    @IBAction func moveDot(_ sender: UIButton) { }
+}
+
+//MARK: - Touch handling
+extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touchePoint = getPoint(from: touches)
         currentPolygon?.points.append(touchePoint)
@@ -61,6 +69,4 @@ class ViewController: UIViewController {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         currentPolygon?.cancelLine()
     }
-    
 }
-

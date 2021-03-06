@@ -10,15 +10,18 @@ import GameplayKit
 
 class StartPoint: PolygonState {
     override func didEnter(from previousState: GKState?) {
-        if let _ = previousState?.isMember(of: CanDraw.self) {
+        guard let state = previousState else { return }
+        if state.isMember(of: CanDraw.self) {
             scene.addNewPolygon()
+            currentPolygon?.points.append(scene.currentPoint)
         }
         currentPolygon?.points.append(scene.currentPoint)
+        currentPolygon?.redraw()
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        stateClass is StartPoint.Type ||
-            stateClass is DrawLine.Type ||
-            stateClass is CancelDraw.Type
+        stateClass is DrawLine.Type ||
+            stateClass is CancelDraw.Type ||
+            stateClass is DrawValidation.Type
     }
 }

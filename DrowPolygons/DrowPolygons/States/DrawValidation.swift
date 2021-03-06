@@ -7,25 +7,22 @@
 
 import GameplayKit
 
-class Validation: PolygonState {
+class DrawValidation: PolygonState {
     override func didEnter(from previousState: GKState?) {
         guard let polygon = currentPolygon else {
             fatalError("Polygon wasn't added as supossed!")
         }
-        if !polygon.isValid {
-            if polygon.points.count <= 2 {
-                polygon.points.removeAll()
-            } else {
-                polygon.points.removeLast()
-            }
-        } else if polygon.shlouldClose() {
+        if polygon.shlouldClose() {
             stateMachine?.enter(CanDraw.self)
             return
+        } else if !polygon.isValid {
+            polygon.points.removeLast()
         }
-        stateMachine?.enter(StartPoint.self)
+        currentPolygon?.redraw()
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        stateClass is StartPoint.Type
+        stateClass is StartPoint.Type ||
+            stateClass is CanDraw.Type
     }
 }

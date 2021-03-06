@@ -10,9 +10,6 @@ import GameplayKit
 
 class DrawLine: PolygonState {
     override func didEnter(from previousState: GKState?) {
-        if let _ = previousState?.isMember(of: StartPoint.self) {
-            currentPolygon?.points.append(scene.currentPoint)
-        }
         currentPolygon?.points.removeLast()
         currentPolygon?.points.append(scene.currentPoint)
         currentPolygon?.redraw()
@@ -21,6 +18,6 @@ class DrawLine: PolygonState {
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
         stateClass is CancelDraw.Type ||
             stateClass is DrawLine.Type ||
-            stateClass is Validation.Type
+            stateClass is DrawValidation.Type
     }
 }

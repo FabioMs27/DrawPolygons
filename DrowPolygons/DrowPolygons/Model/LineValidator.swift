@@ -19,7 +19,7 @@ class IntersectionValidator: LineValidating {
     internal var lines = [Line]()
     
     func validate(points: [CGPoint]) -> Bool {
-        if points.count < 2 { return true }
+        if points.count <= 2 { return true }
         lines.removeAll()
         var pointsCopy = points
         pointsCopy.removeFirst()

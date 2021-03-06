@@ -22,8 +22,9 @@
 		7999164625F3C4FF00DEB8F1 /* PolygonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999164525F3C4FF00DEB8F1 /* PolygonState.swift */; };
 		7999164B25F3C97500DEB8F1 /* StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999164A25F3C97500DEB8F1 /* StartPoint.swift */; };
 		7999165325F3CC6100DEB8F1 /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165225F3CC6100DEB8F1 /* DrawLine.swift */; };
-		7999165825F3CD1C00DEB8F1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165725F3CD1B00DEB8F1 /* Validation.swift */; };
-		7999165D25F3D06200DEB8F1 /* Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165C25F3D06200DEB8F1 /* Cancel.swift */; };
+		7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */; };
+		7999165D25F3D06200DEB8F1 /* CancelDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165C25F3D06200DEB8F1 /* CancelDraw.swift */; };
+		7999166825F3F44F00DEB8F1 /* AvailableStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999166725F3F44F00DEB8F1 /* AvailableStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +66,9 @@
 		7999164525F3C4FF00DEB8F1 /* PolygonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonState.swift; sourceTree = "<group>"; };
 		7999164A25F3C97500DEB8F1 /* StartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPoint.swift; sourceTree = "<group>"; };
 		7999165225F3CC6100DEB8F1 /* DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
-		7999165725F3CD1B00DEB8F1 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		7999165C25F3D06200DEB8F1 /* Cancel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancel.swift; sourceTree = "<group>"; };
+		7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawValidation.swift; sourceTree = "<group>"; };
+		7999165C25F3D06200DEB8F1 /* CancelDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelDraw.swift; sourceTree = "<group>"; };
+		7999166725F3F44F00DEB8F1 /* AvailableStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				799915F425F2998100DEB8F1 /* Assets.xcassets */,
 				799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */,
 				799915F925F2998100DEB8F1 /* Info.plist */,
+				7999166725F3F44F00DEB8F1 /* AvailableStates.swift */,
 			);
 			path = DrowPolygons;
 			sourceTree = "<group>";
@@ -181,8 +184,8 @@
 				7999163D25F3C45100DEB8F1 /* CanDraw.swift */,
 				7999164A25F3C97500DEB8F1 /* StartPoint.swift */,
 				7999165225F3CC6100DEB8F1 /* DrawLine.swift */,
-				7999165725F3CD1B00DEB8F1 /* Validation.swift */,
-				7999165C25F3D06200DEB8F1 /* Cancel.swift */,
+				7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */,
+				7999165C25F3D06200DEB8F1 /* CancelDraw.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -319,14 +322,15 @@
 			files = (
 				7999162925F29B2200DEB8F1 /* LineValidator.swift in Sources */,
 				7999163E25F3C45100DEB8F1 /* CanDraw.swift in Sources */,
-				7999165825F3CD1C00DEB8F1 /* Validation.swift in Sources */,
+				7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */,
+				7999166825F3F44F00DEB8F1 /* AvailableStates.swift in Sources */,
 				7999161F25F29A9900DEB8F1 /* Polygon.swift in Sources */,
 				799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */,
 				7999164B25F3C97500DEB8F1 /* StartPoint.swift in Sources */,
 				799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */,
 				7999162425F29ACB00DEB8F1 /* CGPoint.swift in Sources */,
 				7999164625F3C4FF00DEB8F1 /* PolygonState.swift in Sources */,
-				7999165D25F3D06200DEB8F1 /* Cancel.swift in Sources */,
+				7999165D25F3D06200DEB8F1 /* CancelDraw.swift in Sources */,
 				799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */,
 				7999165325F3CC6100DEB8F1 /* DrawLine.swift in Sources */,
 			);

@@ -9,7 +9,8 @@ import GameplayKit
 
 class CancelDraw: PolygonState {
     override func didEnter(from previousState: GKState?) {
-        if let _ = previousState?.isMember(of: DrawLine.self) {
+        guard let state = previousState else { return }
+        if state.isMember(of: DrawLine.self) {
             currentPolygon?.points.removeLast()
             currentPolygon?.redraw()
         }

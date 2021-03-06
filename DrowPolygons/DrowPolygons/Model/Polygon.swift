@@ -58,15 +58,4 @@ class Polygon {
         }
         return false
     }
-    
-    func cancelLine() {
-        points.removeLast()
-        redraw()
-    }
-    
-    func checkIntersections() {
-        if !validator.validate(points: points) {
-            cancelLine()
-        }
-    }
 }

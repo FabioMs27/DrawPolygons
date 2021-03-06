@@ -10,12 +10,12 @@ import Foundation
 
 typealias Line = (startPoint: CGPoint, endPoint: CGPoint)
 
-protocol LineValidatable: class {
+protocol LineValidating: class {
     var lines: [Line] { get set }
     func validate(points: [CGPoint]) -> Bool
 }
 
-class LineValidator: LineValidatable {
+class IntersectionValidator: LineValidating {
     internal var lines = [Line]()
     
     func validate(points: [CGPoint]) -> Bool {
@@ -35,7 +35,7 @@ class LineValidator: LineValidatable {
 }
 
 //MARK: - Validation algorithm
-private extension LineValidator {
+private extension IntersectionValidator {
     var shouldCancel: Bool {
         guard let lastLine = lines.popLast() else { return false }
         return lines

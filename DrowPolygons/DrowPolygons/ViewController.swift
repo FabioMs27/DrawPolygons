@@ -7,10 +7,11 @@
 
 import UIKit
 
-protocol Drawable {
+protocol Drawable: class {
     var currentPoint: CGPoint { get }
     var currentPolygon: Polygon? { get }
     func addNewPolygon()
+    func showAlert(title: String, message: String)
 }
 
 class ViewController: UIViewController {
@@ -58,6 +59,15 @@ extension ViewController: Drawable {
             fatalError("No touches found!")
         }
         return touch.location(in: self.view)
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "Confirm", style: .default)
+        let cancel = UIAlertAction(title: "Cancel", style: .default)
+        alert.addAction(confirm)
+        alert.addAction(cancel)
+        present(alert, animated: true)
     }
 }
 

@@ -10,6 +10,9 @@ import UIKit
 class Polygon {
     private var path = UIBezierPath()
     private var validator: LineValidating
+    var isValid: Bool {
+        validator.validate(points: points)
+    }
     var points = [CGPoint]()
     
     init(validator: LineValidating = IntersectionValidator()) {

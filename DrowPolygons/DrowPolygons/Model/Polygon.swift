@@ -9,8 +9,15 @@ import UIKit
 
 class Polygon {
     private var path = UIBezierPath()
-    private var validator = LineValidator()
+    private var validator: LineValidating
+    var isValid: Bool {
+        validator.validate(points: points)
+    }
     var points = [CGPoint]()
+    
+    init(validator: LineValidating = IntersectionValidator()) {
+        self.validator = validator
+    }
     
     private(set) lazy var shapeLayer: CAShapeLayer = {
         let shapeLayer = CAShapeLayer()
@@ -50,17 +57,5 @@ class Polygon {
             }
         }
         return false
-    }
-    
-    func cancelLine() {
-        points.removeLast()
-        redraw()
-    }
-    
-    func checkIntersections() {
-        validator.makeLines(from: points)
-        if validator.shouldCancel() {
-            cancelLine()
-        }
     }
 }

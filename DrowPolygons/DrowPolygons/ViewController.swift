@@ -6,9 +6,30 @@
 //
 
 import UIKit
+import GameplayKit
+
+protocol Drawable: class {
+    var currentPoint: CGPoint { get }
+    var currentPolygon: Polygon? { get }
+    func addNewPolygon()
+    func showAlert(title: String, message: String)
+}
 
 class ViewController: UIViewController {
     var polygons = [Polygon]()
+    private var currentTouches = Set<UITouch>()
+    private lazy var stateMachine: GKStateMachine = { [weak self] in
+        guard let self = self else {
+            fatalError("View not captured!")
+        }
+        let stateMachine = GKStateMachine(states: [
+            CanDraw(scene: self), StartPoint(scene: self),
+            DrawLine(scene: self), DrawValidation(scene: self),
+            CancelDraw(scene: self)
+        ])
+        stateMachine.enter(CanDraw.self)
+        return stateMachine
+    }()
     var currentPolygon: Polygon? {
         polygons.last
     }
@@ -18,55 +39,61 @@ class ViewController: UIViewController {
         addNewPolygon()
     }
     
+    @IBAction func draw(_ sender: UIButton) { }
+    @IBAction func erase(_ sender: UIButton) { }
+    @IBAction func movePolygon(_ sender: UIButton) { }
+    @IBAction func moveDot(_ sender: UIButton) { }
+    
+    func enter(state: AvailableStates) {
+        stateMachine.enter(state.type)
+    }
+}
+
+//MARK: - Drawable
+extension ViewController: Drawable {
+    var currentPoint: CGPoint {
+        get { getPoint(from: currentTouches) }
+    }
+    
     func addNewPolygon() {
         let polygon = Polygon()
         self.view.layer.addSublayer(polygon.shapeLayer)
         polygons.append(polygon)
     }
     
-    func getPoint(from touches: Set<UITouch>) -> CGPoint {
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "Confirm", style: .default)
+        let cancel = UIAlertAction(title: "Cancel", style: .default)
+        alert.addAction(confirm)
+        alert.addAction(cancel)
+        present(alert, animated: true)
+    }
+    
+    private func getPoint(from touches: Set<UITouch>) -> CGPoint {
         guard let touch = touches.first else {
             fatalError("No touches found!")
         }
         return touch.location(in: self.view)
     }
-    
-    func updatePath(from touche: CGPoint) {
-        guard let polygon = currentPolygon else { return }
-        if polygon.points.count == 1 {
-            polygon.points.append(touche)
-        }
-        polygon.points.removeLast()
-        polygon.points.append(touche)
-        polygon.redraw()
-    }
-    
-    @IBAction func draw(_ sender: UIButton) { }
-    @IBAction func erase(_ sender: UIButton) { }
-    @IBAction func movePolygon(_ sender: UIButton) { }
-    @IBAction func moveDot(_ sender: UIButton) { }
 }
 
 //MARK: - Touch handling
 extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touchePoint = getPoint(from: touches)
-        currentPolygon?.points.append(touchePoint)
-        updatePath(from: touchePoint)
+        currentTouches = touches
+        enter(state: .startPoint)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touchePoint = getPoint(from: touches)
-        updatePath(from: touchePoint)
+        currentTouches = touches
+        enter(state: .drawLine)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let polygon = currentPolygon else { return }
-        polygon.checkIntersections()
-        if polygon.shlouldClose() { addNewPolygon() }
+        enter(state: .validateDraw)
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        currentPolygon?.cancelLine()
     }
 }

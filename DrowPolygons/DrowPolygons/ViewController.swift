@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol Drawable {
+    var currentPoint: CGPoint { get }
+    var currentPolygon: Polygon? { get }
+    func addNewPolygon()
+}
+
 class ViewController: UIViewController {
     var polygons = [Polygon]()
+    private var currentTouches = Set<UITouch>()
     var currentPolygon: Polygon? {
         polygons.last
     }
@@ -18,17 +25,22 @@ class ViewController: UIViewController {
         addNewPolygon()
     }
     
+    @IBAction func draw(_ sender: UIButton) { }
+    @IBAction func erase(_ sender: UIButton) { }
+    @IBAction func movePolygon(_ sender: UIButton) { }
+    @IBAction func moveDot(_ sender: UIButton) { }
+}
+
+//MARK: - Drawable
+extension ViewController: Drawable {
+    var currentPoint: CGPoint {
+        get { getPoint(from: currentTouches) }
+    }
+    
     func addNewPolygon() {
         let polygon = Polygon()
         self.view.layer.addSublayer(polygon.shapeLayer)
         polygons.append(polygon)
-    }
-    
-    func getPoint(from touches: Set<UITouch>) -> CGPoint {
-        guard let touch = touches.first else {
-            fatalError("No touches found!")
-        }
-        return touch.location(in: self.view)
     }
     
     func updatePath(from touche: CGPoint) {
@@ -41,10 +53,12 @@ class ViewController: UIViewController {
         polygon.redraw()
     }
     
-    @IBAction func draw(_ sender: UIButton) { }
-    @IBAction func erase(_ sender: UIButton) { }
-    @IBAction func movePolygon(_ sender: UIButton) { }
-    @IBAction func moveDot(_ sender: UIButton) { }
+    private func getPoint(from touches: Set<UITouch>) -> CGPoint {
+        guard let touch = touches.first else {
+            fatalError("No touches found!")
+        }
+        return touch.location(in: self.view)
+    }
 }
 
 //MARK: - Touch handling

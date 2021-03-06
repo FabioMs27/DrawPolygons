@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import Foundation
 
 typealias Line = (startPoint: CGPoint, endPoint: CGPoint)
 
-class LineValidator {
-    private var lines = [Line]()
+protocol LineValidatable: class {
+    var lines: [Line] { get set }
+    func validate(points: [CGPoint]) -> Bool
+}
+
+class LineValidator: LineValidatable {
+    internal var lines = [Line]()
     
-    func makeLines(from points: [CGPoint]) {
-        if points.count < 3 { return }
+    func validate(points: [CGPoint]) -> Bool {
+        if points.count < 2 { return true }
         lines.removeAll()
         var pointsCopy = points
         pointsCopy.removeFirst()
@@ -24,16 +30,24 @@ class LineValidator {
                 lines.append(line)
             }
         }
+        return !shouldCancel
     }
-    
-    func shouldCancel() -> Bool {
+}
+
+//MARK: - Validation algorithm
+private extension LineValidator {
+    var shouldCancel: Bool {
         guard let lastLine = lines.popLast() else { return false }
         return lines
             .map { compareIntersections(line: lastLine, with: $0) }
-            .reduce(false, { $0 || $1 })
+            .reduce(false, { $0 || $1 }) || compareDistance(fromPointsIn: lastLine)
     }
     
-    private func compareIntersections(line: Line, with secondLine: Line) -> Bool {
+    func compareDistance(fromPointsIn line: Line) -> Bool {
+        line.startPoint.distanceBetween(point: line.endPoint) < 12.0
+    }
+    
+    func compareIntersections(line: Line, with secondLine: Line) -> Bool {
         let delta1x = line.endPoint.x - line.startPoint.x
         let delta1y = line.endPoint.y - line.startPoint.y
         let delta2x = secondLine.endPoint.x - secondLine.startPoint.x

@@ -105,16 +105,14 @@
 		799915EA25F2997C00DEB8F1 /* DrowPolygons */ = {
 			isa = PBXGroup;
 			children = (
-				799915EB25F2997C00DEB8F1 /* AppDelegate.swift */,
-				799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */,
+				7999163825F39F3D00DEB8F1 /* App */,
+				7999163725F39F3600DEB8F1 /* Extenstions */,
+				7999163625F39F3000DEB8F1 /* Model */,
 				799915EF25F2997C00DEB8F1 /* ViewController.swift */,
 				799915F125F2997C00DEB8F1 /* Main.storyboard */,
 				799915F425F2998100DEB8F1 /* Assets.xcassets */,
 				799915F625F2998100DEB8F1 /* LaunchScreen.storyboard */,
 				799915F925F2998100DEB8F1 /* Info.plist */,
-				7999161E25F29A9900DEB8F1 /* Polygon.swift */,
-				7999162325F29ACB00DEB8F1 /* CGPoint.swift */,
-				7999162825F29B2200DEB8F1 /* LineValidator.swift */,
 			);
 			path = DrowPolygons;
 			sourceTree = "<group>";
@@ -135,6 +133,32 @@
 				7999160F25F2998100DEB8F1 /* Info.plist */,
 			);
 			path = DrowPolygonsUITests;
+			sourceTree = "<group>";
+		};
+		7999163625F39F3000DEB8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7999162825F29B2200DEB8F1 /* LineValidator.swift */,
+				7999161E25F29A9900DEB8F1 /* Polygon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7999163725F39F3600DEB8F1 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				7999162325F29ACB00DEB8F1 /* CGPoint.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		7999163825F39F3D00DEB8F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				799915EB25F2997C00DEB8F1 /* AppDelegate.swift */,
+				799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

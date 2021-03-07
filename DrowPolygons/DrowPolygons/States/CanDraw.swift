@@ -14,6 +14,7 @@ class CanDraw: PolygonState {
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
         stateClass is StartPoint.Type ||
-            stateClass is CanMove.Type
+            stateClass is CanMove.Type ||
+            stateClass is CanErase.Type
     }
 }

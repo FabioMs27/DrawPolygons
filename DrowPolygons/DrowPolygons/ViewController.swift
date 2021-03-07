@@ -30,7 +30,8 @@ class ViewController: UIViewController {
             CanDraw(scene: self), StartPoint(scene: self),
             DrawLine(scene: self), DrawValidation(scene: self),
             CancelDraw(scene: self), CanMove(scene: self),
-            SelectPolygon(scene: self), MovePolygon(scene: self)
+            SelectPolygon(scene: self), MovePolygon(scene: self),
+            CanErase(scene: self), ErasePolygon(scene: self)
         ])
         stateMachine.enter(CanDraw.self)
         return stateMachine
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
     }
     @IBAction func erase(_ sender: UIButton) {
         enter(state: .cancelDraw)
+        enter(state: .canErase)
     }
     @IBAction func movePolygon(_ sender: UIButton) {
         enter(state: .cancelDraw)
@@ -114,6 +116,7 @@ extension ViewController: Drawable {
 extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         currentTouches = touches
+        enter(state: .erasePolygon)
         enter(state: .startPoint)
         enter(state: .selectPolygon)
     }
@@ -126,6 +129,7 @@ extension ViewController {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         enter(state: .canMove)
+        enter(state: .canErase)
         enter(state: .validateDraw)
     }
     

@@ -8,13 +8,9 @@
 import GameplayKit
 
 class CanDraw: PolygonState {
-    override func didEnter(from previousState: GKState?) {
-        
-    }
-    
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        stateClass is StartPoint.Type ||
-            stateClass is CanMove.Type ||
-            stateClass is CanErase.Type
+        stateClass is CanMove.Type ||
+            stateClass is CanErase.Type ||
+            stateClass is StartPoint.Type
     }
 }

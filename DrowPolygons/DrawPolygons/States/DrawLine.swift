@@ -11,7 +11,7 @@ import GameplayKit
 class DrawLine: PolygonState {
     override func didEnter(from previousState: GKState?) {
         currentPolygon?.points.removeLast()
-        currentPolygon?.points.append(scene.currentPoint)
+        currentPolygon?.points.append(scene.currentTouch)
         currentPolygon?.redraw()
     }
     

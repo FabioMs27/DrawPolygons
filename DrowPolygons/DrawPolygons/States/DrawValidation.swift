@@ -9,16 +9,15 @@ import GameplayKit
 
 class DrawValidation: PolygonState {
     override func didEnter(from previousState: GKState?) {
-        guard let polygon = currentPolygon else {
-            fatalError("Polygon wasn't added as supossed!")
-        }
-        if polygon.shlouldClose() {
+        guard let polygon = currentPolygon else { return }
+        if polygon.shouldClose {
+            polygon.close()
+            scene.currentPolygon = nil
             stateMachine?.enter(CanDraw.self)
-            return
         } else if !polygon.isValid {
             polygon.points.removeLast()
+            polygon.redraw()
         }
-        currentPolygon?.redraw()
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

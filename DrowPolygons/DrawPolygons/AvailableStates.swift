@@ -17,6 +17,8 @@ enum AvailableStates {
     case canMove
     case movePolygon
     case selectPolygon
+    case canErase
+    case erasePolygon
     
     var type: GKState.Type {
         switch self {
@@ -28,6 +30,8 @@ enum AvailableStates {
         case .canMove: return CanMove.self
         case .movePolygon: return MovePolygon.self
         case .selectPolygon: return SelectPolygon.self
+        case .canErase: return CanErase.self
+        case .erasePolygon: return ErasePolygon.self
         }
     }
 }

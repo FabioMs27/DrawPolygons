@@ -20,7 +20,6 @@
 		7999162925F29B2200DEB8F1 /* LineValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999162825F29B2200DEB8F1 /* LineValidator.swift */; };
 		7999163E25F3C45100DEB8F1 /* CanDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999163D25F3C45100DEB8F1 /* CanDraw.swift */; };
 		7999164625F3C4FF00DEB8F1 /* PolygonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999164525F3C4FF00DEB8F1 /* PolygonState.swift */; };
-		7999164B25F3C97500DEB8F1 /* StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999164A25F3C97500DEB8F1 /* StartPoint.swift */; };
 		7999165325F3CC6100DEB8F1 /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165225F3CC6100DEB8F1 /* DrawLine.swift */; };
 		7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */; };
 		7999165D25F3D06200DEB8F1 /* CancelDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165C25F3D06200DEB8F1 /* CancelDraw.swift */; };
@@ -28,6 +27,9 @@
 		7999167325F4E17C00DEB8F1 /* CanMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167225F4E17C00DEB8F1 /* CanMove.swift */; };
 		7999167825F4E24300DEB8F1 /* SelectPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167725F4E24200DEB8F1 /* SelectPolygon.swift */; };
 		7999167D25F4E26300DEB8F1 /* MovePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167C25F4E26300DEB8F1 /* MovePolygon.swift */; };
+		7999168525F524A500DEB8F1 /* CanErase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999168425F524A500DEB8F1 /* CanErase.swift */; };
+		7999168A25F524E100DEB8F1 /* ErasePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999168925F524E100DEB8F1 /* ErasePolygon.swift */; };
+		7999169225F54FF900DEB8F1 /* StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999169125F54FF900DEB8F1 /* StartPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		799915E825F2997C00DEB8F1 /* DrowPolygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrowPolygons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799915E825F2997C00DEB8F1 /* DrawPolygons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPolygons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799915EB25F2997C00DEB8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799915ED25F2997C00DEB8F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		799915EF25F2997C00DEB8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +58,10 @@
 		799915F425F2998100DEB8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799915F725F2998100DEB8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799915F925F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowPolygonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799915FE25F2998100DEB8F1 /* DrawPolygonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPolygonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowPolygonsTests.swift; sourceTree = "<group>"; };
 		7999160425F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowPolygonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7999160925F2998100DEB8F1 /* DrawPolygonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPolygonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowPolygonsUITests.swift; sourceTree = "<group>"; };
 		7999160F25F2998100DEB8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7999161E25F29A9900DEB8F1 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
@@ -67,7 +69,6 @@
 		7999162825F29B2200DEB8F1 /* LineValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineValidator.swift; sourceTree = "<group>"; };
 		7999163D25F3C45100DEB8F1 /* CanDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanDraw.swift; sourceTree = "<group>"; };
 		7999164525F3C4FF00DEB8F1 /* PolygonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonState.swift; sourceTree = "<group>"; };
-		7999164A25F3C97500DEB8F1 /* StartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPoint.swift; sourceTree = "<group>"; };
 		7999165225F3CC6100DEB8F1 /* DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
 		7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawValidation.swift; sourceTree = "<group>"; };
 		7999165C25F3D06200DEB8F1 /* CancelDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelDraw.swift; sourceTree = "<group>"; };
@@ -75,6 +76,9 @@
 		7999167225F4E17C00DEB8F1 /* CanMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanMove.swift; sourceTree = "<group>"; };
 		7999167725F4E24200DEB8F1 /* SelectPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPolygon.swift; sourceTree = "<group>"; };
 		7999167C25F4E26300DEB8F1 /* MovePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePolygon.swift; sourceTree = "<group>"; };
+		7999168425F524A500DEB8F1 /* CanErase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanErase.swift; sourceTree = "<group>"; };
+		7999168925F524E100DEB8F1 /* ErasePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErasePolygon.swift; sourceTree = "<group>"; };
+		7999169125F54FF900DEB8F1 /* StartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,9 @@
 		799915DF25F2997C00DEB8F1 = {
 			isa = PBXGroup;
 			children = (
-				799915EA25F2997C00DEB8F1 /* DrowPolygons */,
-				7999160125F2998100DEB8F1 /* DrowPolygonsTests */,
-				7999160C25F2998100DEB8F1 /* DrowPolygonsUITests */,
+				799915EA25F2997C00DEB8F1 /* DrawPolygons */,
+				7999160125F2998100DEB8F1 /* DrawPolygonsTests */,
+				7999160C25F2998100DEB8F1 /* DrawPolygonsUITests */,
 				799915E925F2997C00DEB8F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,14 +119,14 @@
 		799915E925F2997C00DEB8F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				799915E825F2997C00DEB8F1 /* DrowPolygons.app */,
-				799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */,
-				7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */,
+				799915E825F2997C00DEB8F1 /* DrawPolygons.app */,
+				799915FE25F2998100DEB8F1 /* DrawPolygonsTests.xctest */,
+				7999160925F2998100DEB8F1 /* DrawPolygonsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		799915EA25F2997C00DEB8F1 /* DrowPolygons */ = {
+		799915EA25F2997C00DEB8F1 /* DrawPolygons */ = {
 			isa = PBXGroup;
 			children = (
 				7999163825F39F3D00DEB8F1 /* App */,
@@ -136,25 +140,25 @@
 				799915F925F2998100DEB8F1 /* Info.plist */,
 				7999166725F3F44F00DEB8F1 /* AvailableStates.swift */,
 			);
-			path = DrowPolygons;
+			path = DrawPolygons;
 			sourceTree = "<group>";
 		};
-		7999160125F2998100DEB8F1 /* DrowPolygonsTests */ = {
+		7999160125F2998100DEB8F1 /* DrawPolygonsTests */ = {
 			isa = PBXGroup;
 			children = (
 				7999160225F2998100DEB8F1 /* DrowPolygonsTests.swift */,
 				7999160425F2998100DEB8F1 /* Info.plist */,
 			);
-			path = DrowPolygonsTests;
+			path = DrawPolygonsTests;
 			sourceTree = "<group>";
 		};
-		7999160C25F2998100DEB8F1 /* DrowPolygonsUITests */ = {
+		7999160C25F2998100DEB8F1 /* DrawPolygonsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7999160D25F2998100DEB8F1 /* DrowPolygonsUITests.swift */,
 				7999160F25F2998100DEB8F1 /* Info.plist */,
 			);
-			path = DrowPolygonsUITests;
+			path = DrawPolygonsUITests;
 			sourceTree = "<group>";
 		};
 		7999163625F39F3000DEB8F1 /* Model */ = {
@@ -188,13 +192,15 @@
 			children = (
 				7999164525F3C4FF00DEB8F1 /* PolygonState.swift */,
 				7999163D25F3C45100DEB8F1 /* CanDraw.swift */,
-				7999164A25F3C97500DEB8F1 /* StartPoint.swift */,
+				7999169125F54FF900DEB8F1 /* StartPoint.swift */,
 				7999165225F3CC6100DEB8F1 /* DrawLine.swift */,
 				7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */,
 				7999165C25F3D06200DEB8F1 /* CancelDraw.swift */,
 				7999167225F4E17C00DEB8F1 /* CanMove.swift */,
 				7999167725F4E24200DEB8F1 /* SelectPolygon.swift */,
 				7999167C25F4E26300DEB8F1 /* MovePolygon.swift */,
+				7999168425F524A500DEB8F1 /* CanErase.swift */,
+				7999168925F524E100DEB8F1 /* ErasePolygon.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -202,9 +208,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		799915E725F2997C00DEB8F1 /* DrowPolygons */ = {
+		799915E725F2997C00DEB8F1 /* DrawPolygons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygons" */;
+			buildConfigurationList = 7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygons" */;
 			buildPhases = (
 				799915E425F2997C00DEB8F1 /* Sources */,
 				799915E525F2997C00DEB8F1 /* Frameworks */,
@@ -214,14 +220,14 @@
 			);
 			dependencies = (
 			);
-			name = DrowPolygons;
+			name = DrawPolygons;
 			productName = DrowPolygons;
-			productReference = 799915E825F2997C00DEB8F1 /* DrowPolygons.app */;
+			productReference = 799915E825F2997C00DEB8F1 /* DrawPolygons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		799915FD25F2998100DEB8F1 /* DrowPolygonsTests */ = {
+		799915FD25F2998100DEB8F1 /* DrawPolygonsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsTests" */;
+			buildConfigurationList = 7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygonsTests" */;
 			buildPhases = (
 				799915FA25F2998100DEB8F1 /* Sources */,
 				799915FB25F2998100DEB8F1 /* Frameworks */,
@@ -232,14 +238,14 @@
 			dependencies = (
 				7999160025F2998100DEB8F1 /* PBXTargetDependency */,
 			);
-			name = DrowPolygonsTests;
+			name = DrawPolygonsTests;
 			productName = DrowPolygonsTests;
-			productReference = 799915FE25F2998100DEB8F1 /* DrowPolygonsTests.xctest */;
+			productReference = 799915FE25F2998100DEB8F1 /* DrawPolygonsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7999160825F2998100DEB8F1 /* DrowPolygonsUITests */ = {
+		7999160825F2998100DEB8F1 /* DrawPolygonsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsUITests" */;
+			buildConfigurationList = 7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygonsUITests" */;
 			buildPhases = (
 				7999160525F2998100DEB8F1 /* Sources */,
 				7999160625F2998100DEB8F1 /* Frameworks */,
@@ -250,9 +256,9 @@
 			dependencies = (
 				7999160B25F2998100DEB8F1 /* PBXTargetDependency */,
 			);
-			name = DrowPolygonsUITests;
+			name = DrawPolygonsUITests;
 			productName = DrowPolygonsUITests;
-			productReference = 7999160925F2998100DEB8F1 /* DrowPolygonsUITests.xctest */;
+			productReference = 7999160925F2998100DEB8F1 /* DrawPolygonsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -277,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrowPolygons" */;
+			buildConfigurationList = 799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrawPolygons" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -290,9 +296,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				799915E725F2997C00DEB8F1 /* DrowPolygons */,
-				799915FD25F2998100DEB8F1 /* DrowPolygonsTests */,
-				7999160825F2998100DEB8F1 /* DrowPolygonsUITests */,
+				799915E725F2997C00DEB8F1 /* DrawPolygons */,
+				799915FD25F2998100DEB8F1 /* DrawPolygonsTests */,
+				7999160825F2998100DEB8F1 /* DrawPolygonsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,11 +338,12 @@
 				7999162925F29B2200DEB8F1 /* LineValidator.swift in Sources */,
 				7999163E25F3C45100DEB8F1 /* CanDraw.swift in Sources */,
 				7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */,
+				7999169225F54FF900DEB8F1 /* StartPoint.swift in Sources */,
+				7999168A25F524E100DEB8F1 /* ErasePolygon.swift in Sources */,
 				7999166825F3F44F00DEB8F1 /* AvailableStates.swift in Sources */,
 				7999167825F4E24300DEB8F1 /* SelectPolygon.swift in Sources */,
 				7999161F25F29A9900DEB8F1 /* Polygon.swift in Sources */,
 				799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */,
-				7999164B25F3C97500DEB8F1 /* StartPoint.swift in Sources */,
 				799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */,
 				7999162425F29ACB00DEB8F1 /* CGPoint.swift in Sources */,
 				7999164625F3C4FF00DEB8F1 /* PolygonState.swift in Sources */,
@@ -345,6 +352,7 @@
 				799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */,
 				7999165325F3CC6100DEB8F1 /* DrawLine.swift in Sources */,
 				7999167325F4E17C00DEB8F1 /* CanMove.swift in Sources */,
+				7999168525F524A500DEB8F1 /* CanErase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +377,12 @@
 /* Begin PBXTargetDependency section */
 		7999160025F2998100DEB8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 799915E725F2997C00DEB8F1 /* DrowPolygons */;
+			target = 799915E725F2997C00DEB8F1 /* DrawPolygons */;
 			targetProxy = 799915FF25F2998100DEB8F1 /* PBXContainerItemProxy */;
 		};
 		7999160B25F2998100DEB8F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 799915E725F2997C00DEB8F1 /* DrowPolygons */;
+			target = 799915E725F2997C00DEB8F1 /* DrawPolygons */;
 			targetProxy = 7999160A25F2998100DEB8F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -522,12 +530,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BY575KUK4V;
-				INFOPLIST_FILE = DrowPolygons/Info.plist;
+				INFOPLIST_FILE = DrawPolygons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygons;
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrawPolygons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -541,12 +549,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BY575KUK4V;
-				INFOPLIST_FILE = DrowPolygons/Info.plist;
+				INFOPLIST_FILE = DrawPolygons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrowPolygons;
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.DrawPolygons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,7 +579,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrowPolygons.app/DrowPolygons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPolygons.app/DrawPolygons";
 			};
 			name = Debug;
 		};
@@ -593,7 +601,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrowPolygons.app/DrowPolygons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPolygons.app/DrawPolygons";
 			};
 			name = Release;
 		};
@@ -640,7 +648,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrowPolygons" */ = {
+		799915E325F2997C00DEB8F1 /* Build configuration list for PBXProject "DrawPolygons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7999161025F2998100DEB8F1 /* Debug */,
@@ -649,7 +657,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygons" */ = {
+		7999161225F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7999161325F2998100DEB8F1 /* Debug */,
@@ -658,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsTests" */ = {
+		7999161525F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygonsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7999161625F2998100DEB8F1 /* Debug */,
@@ -667,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrowPolygonsUITests" */ = {
+		7999161825F2998100DEB8F1 /* Build configuration list for PBXNativeTarget "DrawPolygonsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7999161925F2998100DEB8F1 /* Debug */,

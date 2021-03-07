@@ -9,7 +9,7 @@ import GameplayKit
 
 class MovePolygon: PolygonState {
     override func didEnter(from previousState: GKState?) {
-        scene.movePolygon()
+        selectedPolygon?.position = touchDistance
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

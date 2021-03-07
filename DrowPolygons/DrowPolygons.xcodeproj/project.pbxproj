@@ -25,6 +25,9 @@
 		7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */; };
 		7999165D25F3D06200DEB8F1 /* CancelDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999165C25F3D06200DEB8F1 /* CancelDraw.swift */; };
 		7999166825F3F44F00DEB8F1 /* AvailableStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999166725F3F44F00DEB8F1 /* AvailableStates.swift */; };
+		7999167325F4E17C00DEB8F1 /* CanMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167225F4E17C00DEB8F1 /* CanMove.swift */; };
+		7999167825F4E24300DEB8F1 /* SelectPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167725F4E24200DEB8F1 /* SelectPolygon.swift */; };
+		7999167D25F4E26300DEB8F1 /* MovePolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999167C25F4E26300DEB8F1 /* MovePolygon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawValidation.swift; sourceTree = "<group>"; };
 		7999165C25F3D06200DEB8F1 /* CancelDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelDraw.swift; sourceTree = "<group>"; };
 		7999166725F3F44F00DEB8F1 /* AvailableStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableStates.swift; sourceTree = "<group>"; };
+		7999167225F4E17C00DEB8F1 /* CanMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanMove.swift; sourceTree = "<group>"; };
+		7999167725F4E24200DEB8F1 /* SelectPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPolygon.swift; sourceTree = "<group>"; };
+		7999167C25F4E26300DEB8F1 /* MovePolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePolygon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,9 @@
 				7999165225F3CC6100DEB8F1 /* DrawLine.swift */,
 				7999165725F3CD1B00DEB8F1 /* DrawValidation.swift */,
 				7999165C25F3D06200DEB8F1 /* CancelDraw.swift */,
+				7999167225F4E17C00DEB8F1 /* CanMove.swift */,
+				7999167725F4E24200DEB8F1 /* SelectPolygon.swift */,
+				7999167C25F4E26300DEB8F1 /* MovePolygon.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -324,15 +333,18 @@
 				7999163E25F3C45100DEB8F1 /* CanDraw.swift in Sources */,
 				7999165825F3CD1C00DEB8F1 /* DrawValidation.swift in Sources */,
 				7999166825F3F44F00DEB8F1 /* AvailableStates.swift in Sources */,
+				7999167825F4E24300DEB8F1 /* SelectPolygon.swift in Sources */,
 				7999161F25F29A9900DEB8F1 /* Polygon.swift in Sources */,
 				799915F025F2997C00DEB8F1 /* ViewController.swift in Sources */,
 				7999164B25F3C97500DEB8F1 /* StartPoint.swift in Sources */,
 				799915EC25F2997C00DEB8F1 /* AppDelegate.swift in Sources */,
 				7999162425F29ACB00DEB8F1 /* CGPoint.swift in Sources */,
 				7999164625F3C4FF00DEB8F1 /* PolygonState.swift in Sources */,
+				7999167D25F4E26300DEB8F1 /* MovePolygon.swift in Sources */,
 				7999165D25F3D06200DEB8F1 /* CancelDraw.swift in Sources */,
 				799915EE25F2997C00DEB8F1 /* SceneDelegate.swift in Sources */,
 				7999165325F3CC6100DEB8F1 /* DrawLine.swift in Sources */,
+				7999167325F4E17C00DEB8F1 /* CanMove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

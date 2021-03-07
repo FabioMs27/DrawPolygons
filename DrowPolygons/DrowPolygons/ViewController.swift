@@ -13,11 +13,14 @@ protocol Drawable: class {
     var currentPolygon: Polygon? { get }
     func addNewPolygon()
     func removePolygon()
+    func movePolygon()
+    func selectPolygon()
     func showAlert(title: String, message: String)
 }
 
 class ViewController: UIViewController {
     var polygons = [Polygon]()
+    var selectedPolygon: Polygon?
     private var currentTouches = Set<UITouch>()
     private lazy var stateMachine: GKStateMachine = { [weak self] in
         guard let self = self else {
@@ -26,7 +29,8 @@ class ViewController: UIViewController {
         let stateMachine = GKStateMachine(states: [
             CanDraw(scene: self), StartPoint(scene: self),
             DrawLine(scene: self), DrawValidation(scene: self),
-            CancelDraw(scene: self)
+            CancelDraw(scene: self), CanMove(scene: self),
+            SelectPolygon(scene: self), MovePolygon(scene: self)
         ])
         stateMachine.enter(CanDraw.self)
         return stateMachine
@@ -48,6 +52,7 @@ class ViewController: UIViewController {
     }
     @IBAction func movePolygon(_ sender: UIButton) {
         enter(state: .cancelDraw)
+        enter(state: .canMove)
     }
     @IBAction func moveDot(_ sender: UIButton) {
         enter(state: .cancelDraw)
@@ -73,6 +78,15 @@ extension ViewController: Drawable {
     func removePolygon() {
         let lastPolygon = polygons.removeLast()
         lastPolygon.shapeLayer.removeFromSuperlayer()
+    }
+    
+    func movePolygon() {
+        selectedPolygon?.move(to: currentPoint)
+    }
+    
+    func selectPolygon() {
+        selectedPolygon = polygons.filter { $0.shapeLayer.path?.contains(currentPoint) ?? false }.first
+        selectedPolygon?.initialPos = currentPoint
     }
     
     func showAlert(title: String, message: String) {
@@ -101,14 +115,17 @@ extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         currentTouches = touches
         enter(state: .startPoint)
+        enter(state: .selectPolygon)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         currentTouches = touches
         enter(state: .drawLine)
+        enter(state: .movePolygon)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        enter(state: .canMove)
         enter(state: .validateDraw)
     }
     

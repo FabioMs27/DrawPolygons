@@ -10,6 +10,7 @@ import UIKit
 class Polygon {
     private var path = UIBezierPath()
     private var validator: LineValidating
+    var initialPos: CGPoint = .zero
     var isValid: Bool {
         validator.validate(points: points)
     }
@@ -34,6 +35,10 @@ class Polygon {
         path.close()
         shapeLayer.fillColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
         shapeLayer.path = path.cgPath
+    }
+    
+    func move(to point: CGPoint) {
+        shapeLayer.position = point - initialPos
     }
     
     func redraw() {

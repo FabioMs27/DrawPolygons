@@ -14,6 +14,9 @@ enum AvailableStates {
     case drawLine
     case validateDraw
     case cancelDraw
+    case canMove
+    case movePolygon
+    case selectPolygon
     
     var type: GKState.Type {
         switch self {
@@ -22,6 +25,9 @@ enum AvailableStates {
         case .drawLine:   return DrawLine.self
         case .startPoint: return StartPoint.self
         case .validateDraw: return DrawValidation.self
+        case .canMove: return CanMove.self
+        case .movePolygon: return MovePolygon.self
+        case .selectPolygon: return SelectPolygon.self
         }
     }
 }

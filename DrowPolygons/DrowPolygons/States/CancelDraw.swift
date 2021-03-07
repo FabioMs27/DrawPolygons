@@ -17,7 +17,14 @@ class CancelDraw: PolygonState {
         scene.showAlert(title: "Your polygon will be deleted!", message: "Are you sure you want to proceed?")
     }
     
+    override func willExit(to nextState: GKState) {
+        if nextState.isMember(of: CanDraw.self) {
+            scene.removePolygon()
+        }
+    }
+    
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        stateClass is StartPoint.Type
+        stateClass is StartPoint.Type ||
+            stateClass is CanDraw.Type
     }
 }

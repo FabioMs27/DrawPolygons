@@ -21,7 +21,6 @@ class StartPoint: PolygonState {
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
         stateClass is DrawLine.Type ||
-            stateClass is CancelDraw.Type ||
             stateClass is DrawValidation.Type
     }
 }

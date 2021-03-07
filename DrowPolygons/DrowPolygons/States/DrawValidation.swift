@@ -23,6 +23,7 @@ class DrawValidation: PolygonState {
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
         stateClass is StartPoint.Type ||
-            stateClass is CanDraw.Type
+            stateClass is CanDraw.Type ||
+            stateClass is CancelDraw.Type
     }
 }
